@@ -1,24 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
 
-.wrapper{
-
+*{
+  box-sizing: border-box;
 }
-.box1{
+.container{
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background: black;
+  height: 700px;
+  align-items: flex-start;
+}
+.box{
+  flex-grow: 1;
+  // width: 100px;
+  // height: 100px;
   background: red;
+  border: 1px solid black;
 }
 .box2{
+  flex-grow: 1;
+  // width: 400px;
+  // height: 100px;
   background: blue;
+  border: 1px solid black;
 }
 .box3{
-  background: yellow;
-}
-.box4{
+  flex-grow: 2;
+  // width: 200px;
+  // height: 100px;
   background: green;
-}
-.box5{
-  background: orange;
-}
-.box6{
-  background: pink;
+  border: 1px solid black;
 }
